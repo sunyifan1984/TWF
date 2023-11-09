@@ -5,8 +5,7 @@ Mei, B., Jian, Y., Sun, Y. (2023). Unveiling commonalities and differences in ge
 # Introduction
 This code implements the iterative algorithm introduced in the article to solve the  proposed  objective function:
 
-$$
-H(\tilde\beta)=	\sum_{m=1}^M\frac1{n^m}
+$$H(\tilde\beta)=	\sum_{m=1}^M\frac1{n^m}
 	    	\sum\limits_{
 	    i=v_m+1
 	    	}^{v_{m+1}}
@@ -18,8 +17,7 @@ $$
 		\sum\limits_{
 			i=v_m+1
 		}^{v_{m+1}}
-		\rho_\delta\left((\tilde y-\tilde{ X}\tilde \beta)_i\right)\right)+\frac{1}{2}\tilde \beta^\top {S}^{(t)}\tilde\beta+\frac{1}{2}\tilde \beta^\top{F}^{(t)}\tilde\beta.
-$$
+		\rho_\delta\left((\tilde y-\tilde{ X}\tilde \beta)_i\right)\right)+\frac{1}{2}\tilde \beta^\top {S}^{(t)}\tilde\beta+\frac{1}{2}\tilde \beta^\top{F}^{(t)}\tilde\beta.$$
 
 After obtaining $\tilde\beta^{(t+1)}$, we update $S^{(t+1)}$ and  $F^{(t+1)}$, respectively. We repeat this two-step procedure until convergence.
 
