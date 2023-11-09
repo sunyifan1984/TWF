@@ -5,15 +5,10 @@ Mei, B., Jian, Y., Sun, Y. (2023). Unveiling commonalities and differences in ge
 # Introduction
 This code implements the iterative algorithm introduced in the article to solve the  proposed  objective function:
 
-$$H(\tilde\beta)=	\sum_{m=1}^M\frac1{n^m}
-	    	\sum\limits_{
-	    i=v_m+1
-	    	}^{v_{m+1}}
-    	\rho_\delta\left((\tilde y-\tilde{X}\tilde\beta)_i\right)+\lambda_1\|\tilde\beta\|_1 +\lambda_{2}\sum_{m_1< m_2}\sum_{k=1}^{q}\|\beta_{\cdot k}^{m_{1}}-\beta_{\cdot k}^{m_{2}}\|_{2}+\lambda_{3}\sum_{m_1<m_2}\sum_{j=1}^{p}\|\beta_{j.}^{m_{1}}-\beta_{j.}^{m_{2}}\|_{2}
-$$
+![WechatIMG8](https://github.com/sunyifan1984/TWF/assets/86696736/f190c28c-d1f0-4003-b905-9102add7fb07)
+
 The algorithm starts from an initial estimate $\tilde{\beta^0}$ , and then update $\tilde{\beta}^{t+1}$ by solving the following convex optimization problem at t-th iteration.
-$$
-\tilde{\beta}^{t+1}=\arg\min\left(\sum_{m=1}^M\frac1{n^m}
+$$\tilde{\beta}^{t+1}=\arg\min\left(\sum_{m=1}^M\frac1{n^m}
 		\sum\limits_{
 			i=v_m+1
 		}^{v_{m+1}}
